@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chingu Vibes - Your go-to place for the best Kdramas, Cdramas, and Jdramas!">
+    <meta name="keywords" content="Kdramas, Cdramas, Jdramas, Asian Dramas, Korean Dramas">
+
+    <title>Chingu Vibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Medula+One&family=Rancho&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #7469B6; font-size: larger;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo and Brand -->
+            <div class="d-flex align-items-center">
+                <img src="chingu.jpg" alt="Logo"
+                    style="width: 60px; height: 60px; margin-right: 10px; border-radius: 50%;">
+                <a class="navbar-brand" href="#" style="font-family: cursive; font-size: 25px;">
+                    <span style="color: #FFE6E6;">
+                        <span style="color: #E1AFD1; font-family: 'Rancho', cursive; font-size: larger;">Chingu</span>
+                        vibes
+                    </span>
+                </a>
+            </div>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link" style="color: #F3D4D4;">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="watchDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: #F3D4D4;">
+                            Watch more
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="watchDropdown">
+                            <li><a class="dropdown-item" href="kdrama.html">Korean dramas</a></li>
+                            <li><a class="dropdown-item" href="cdrama.html">Chinese dramas</a></li>
+                            <li><a class="dropdown-item" href="jdrama.html">Japanese dramas</a></li>
+                            <li><a class="dropdown-item" href="tdrama.html">Thai dramas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quiz.html" class="nav-link" style="color: #F3D4D4;">Quiz</a>
+                    </li>
+                    <!-- Profile Icon -->
+                    <li class="nav-item ms-3">
+                        <a href="login.html" class="nav-link d-flex align-items-center" style="color: #F3D4D4;">
+                            <i class="fa-solid fa-user" style="font-size: 1.5rem; color: #FFE6E6; background-color: #7469B6; 
+                                padding: 10px; border-radius: 50%;"></i>
+                            <span style="margin-left: 10px;">Sign Up</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQaTgzDA0HylbNC0WFcbIahrJYm1pgB9GsCzCWL1BoY7dFReYV5ut0iIuIwPzY5jKzQba0BB5T9aXvGomg8fcO7aCmNUR48zYG8HFJeFWu0mbBhSx0Kk55qmBmUvqEBDCARwsZ_AHHIgnu59TkedcSke08yc.jpg?r=806"
+                    alt="dramas" class="d-block w-100">
+            </div>
+            <div class="carousel-item active">
+                <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQd_6XWDFyLephFw6DMuFI3L4FaRx24RYVvqlb2Yr69GxGw3EiBNh3K71Oi8MbclgODgRcRI0kKBcnp87kmkg3mXCnVOP0Y2z1phVUY3QzvVH7x8bPmO3wKBM8fQz7dSwkaIz7ZwZLuFr4Dnq_GrpL7SVORQ.jpg?r=24b"
+                    alt="BTS" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQTADYHiqdb-tO6icTg5jc4kRnsFsaXB70e11QJKaoNk4Mf2eImY2kySI2WIIX8btOFDg6OL-sfTSKIJ3bGpD_6IvOJ2pvWzxCl0HqwFsuADd8cQ8eJhlDpBaPbIokFW9fKmrBpEDmcI2VvxYeZEsjjGC.jpg?r=d6d"
+                    alt="dramas" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div><br>
+    <br>
+
+    <h3 style="padding-left: 30px; color: #7469B6;">On-going Dramas</h3>
+
+    <div class="container-fluid py-5" style="padding: 40px; border-radius: 20px;">
+        <div class="container" style="border: 2px solid #363636; border-radius: 20px; padding: 20px;">
+            <div class="scrolling-wrapper row flex-row flex-nowrap" style="overflow-x: auto; white-space: nowrap;">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #4f4848; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color:#FFE6E6;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/The_Judge_from_Hell_poster.png"
+                            class="card-img-top" alt="The Judge from Hell"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">The Judge from Hell</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=joZdiZ2W0zQ" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHPYISqQLV1jSJjfwbwiIaWvLOw5PEhTC9ew&s"
+                            class="card-img-top" alt="Cinderella at 2 AM"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Cinderella at 2 AM</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=T6Eyvr0OAMY" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://i.mydramalist.com/qY3rpK_4c.jpg?v=1" class="card-img-top" alt="Fate of Beauty"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Fate of Beauty</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=Oq-w8DF-dWw" target="_blank"
+                                class="btn btn-primary" style="background-color:#7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0b0t4Q_D2_YVrbrAWFsrdDR_qWMHUPNW7w&s"
+                            class="card-img-top" alt="Dear Hyeri"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Dear Hyeri</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=b3mkbCBUztQ" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color:#FFE6E6;">
+                        <img src="data:image/jpeg;base64,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"
+                            class="card-img-top" alt="What Comes After Love"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Gyeongseong Creature</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=bRUwJkGVXEY" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Family_by_Choice_poster.png/250px-Family_by_Choice_poster.png"
+                            class="card-img-top" alt="Dear Hyeri"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Family by Choice</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=-K5XEZvctjs" target="_blank"
+                                class="btn btn-primary" style="background-color:#7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color:#FFE6E6;">
+                        <img src="https://m.media-amazon.com/images/M/MV5BM2M4OWFhOTQtY2VkZC00ODQwLTgzZWYtODIzZGRkZDY3NWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                            class="card-img-top" alt="Dear Hyeri"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">DNA Lover</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=9X06tnA9GlU" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/9/92/Iron_Family_poster.png"
+                            class="card-img-top" alt="Dear Hyeri"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color:#E1AFD1">
+                            <h5 class="card-title" style="color: #ffffff;">Iron Family</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=ctPt2Q48z0o" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><br>
+
+
+    <div class="container-fluid py-5">
+        <div class="intro-text">
+            <h2>Welcome To Chingu Vibes</h2>
+            <p>
+                Whether you're a fan of heart-fluttering romances, action-packed thrillers, or historical epics,
+                we’ve got something for everyone. Discover personalized drama recommendations tailored just for you!
+            </p>
+            <p>
+                At <strong>Chingu Vibes</strong>, we’re dedicated to helping both seasoned drama lovers and newcomers
+                find their perfect series. With regularly updated content, you'll never miss out on the hottest trends
+                or classic favorites.
+            </p>
+        </div>
+
+        <div class="video-section">
+            <div class="video-icon-container" style="text-align: center; font-family: cursive;">
+                <p>
+                    <span class="blinking-text">Click me</span>
+                    <i id="video-icon" class="fa-solid fa-video"
+                        style="font-size: 100px; color: #7469B6; cursor: pointer;"></i>
+                </p>
+            </div>
+        </div>
+
+        <!-- Video Popup Modal -->
+        <div id="video-modal" class="video-modal" style="display: none;">
+            <div class="video-modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <video id="popup-video" controls>
+                    <source src="drama.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <h3 style="padding-left: 30px; color: #7469B6;">5 Star Rated K-Dramas</h3>
+    <div class="container-fluid py-5" style="padding: 40px; border-radius: 20px;">
+        <div class="container" style="border: 2px solid #363636; border-radius: 20px; padding: 20px;">
+            <div class="scrolling-wrapper row flex-row flex-nowrap" style="overflow-x: auto; white-space: nowrap;">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #4f4848; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://puzzlemania-154aa.kxcdn.com/products/2024/puzzle-clementoni-1000-pieces-netflix-squid-game.webp"
+                            class="card-img-top" alt="The Judge from Hell"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Squid Game</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=oqxAJKy0ii4" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Crash_Landing_on_You_main_poster.jpg"
+                            class="card-img-top" alt="Cinderella at 2 AM"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Crash landing on you</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=tiwcMjH1dRw" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/24/All_of_Us_Are_Dead.jpeg"
+                            class="card-img-top" alt="Fate of Beauty"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">All of Us Are Dead</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=IN5TD4VRcSM" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNTg5YmU0OTYtNzIzNy00MzM1LWI0OWEtYzc5ZmRlNmJlODk5XkEyXkFqcGc@._V1_.jpg "
+                            class="card-img-top" alt="Dear Hyeri"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">My Demon</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=D-bAfFqvxZg" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/58/It%27s_Okay_to_Not_Be_Okay_Poster.jpg"
+                            class="card-img-top" alt="What Comes After Love"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">It's Okay to Not Be Okay</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=1H__LNPCc80" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDFkYmM3MGMtYWIwNC00ZDkxLWFjZjItYmQ4NTdiZWNjMzczXkEyXkFqcGc@._V1_.jpg"
+                            class="card-img-top" alt="Dear Hyeri"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Hometown Cha-Cha-Cha</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=z66fazyp3-M" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/7/79/The_Glory_TV_series.jpg"
+                            class="card-img-top" alt="Dear Hyeri"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">The Glory</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=tqVVrTvrI8U" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card product-card"
+                        style="border: 2px solid #444444; border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); background-color: #FFE6E6;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1RqZq7geLA0WUIKIAAVNgsv39KkOOvxvEPg&s"
+                            class="card-img-top" alt="Dear Hyeri"
+                            style="border-bottom: 2px solid #444444; border-radius: 50%; width: 80%; margin: 10px auto; display: block;">
+                        <div class="card-body" style="background-color: #E1AFD1;">
+                            <h5 class="card-title" style="color: #ffffff;">Mr. Queen</h5>
+                            <p class="card-text"></p>
+                            <a href="https://www.youtube.com/watch?v=2-Ikfk0hJbw" target="_blank"
+                                class="btn btn-primary" style="background-color: #7469B6; border: none;">Watch
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+
+    <div class="container-fluid py-5"
+        style="display: flex; align-items: center; justify-content: space-between; background-color: #f1c2e2;">
+
+        <h2 style="color: #7469B6;">Discover Your Next Favorite Drama!</h2>
+        <p>
+            Discover personalized drama recommendations tailored just for you! Explore our extensive collection of drama
+            reviews, dive into our engaging quizzes to find your next binge-worthy series, or catch up on the latest
+            trailers and cast info.
+            <br>At Chingu Vibes, we’re dedicated to helping both seasoned drama lovers and newcomers find their perfect
+            series. With regularly updated content, you'll never miss out on the hottest trends or classic favorites.
+            Ready to find your next favorite drama? Start exploring our recommendations or take our <a
+                href="quiz.html">quiz</a> to see which show is right for you!
+        </p>
+
+    </div>
+
+
+    <div class="collage-container">
+        <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2022/5/9/1042867/12681-The-Sound-Of-M.jpg?w=800&h=420&crop=auto&scale=both"
+            class="collage-img" alt="Drama 1"
+            onclick="showPopup('The Sound of Magic', 'A magician living in an abandoned theme park makes troubles disappear for a disenchanted teenager enduring harsh realities.')">
+        <img src="https://1.vikiplatform.com/c/40466c/26be4e1613.jpg?x=b" class="collage-img" alt="Drama 3"
+            onclick="showPopup('Lovely Runner', 'Right after Ryoo Seon-jae, a top star ends his life, Im Sol, his top fan somehow ends up at a time when they were in high school and tries to protect him.')">
+        <img src="https://i0.wp.com/hallyuism.com/wp-content/uploads/2023/01/image-55.png?resize=1000%2C525&ssl=1"
+            class="collage-img" alt="Drama 5"
+            onclick="showPopup('While You Were Sleeping', 'Three individuals, who have the power of precognition, help each other prevent disastrous incidents and take down a corrupt lawyer.')">
+        <img src="https://pic5.iqiyipic.com/image/20240902/9d/a1/a_100422145_m_601_en_m9_720_405.jpg"
+            class="collage-img" alt="Drama 4"
+            onclick="showPopup('Love is sweet', 'In MH, Jiang Jun meets her childhood playmate, Yuan Shuai. However, the current Yuan Shuai is no longer her gentle protector, but her rival.')">
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <img src="" id="popup-img" alt="Drama Image">
+            <h3 id="popup-title">Drama Title</h3>
+            <p id="popup-description">Drama description goes here.</p>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <button onclick="openForm()" class="review-button">Submit Review</button>
+
+    <!-- Pop-up review form -->
+    <div id="popupForm" class="popup-form" style="display: none;">
+        <div class="form-container">
+            <span class="close-btn" onclick="closeForm()">X</span>
+            <h2>Submit Your Review</h2>
+            <form id="reviewForm">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea><br>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Display the reviews -->
+    <div class="reviews">
+        <h2 style="color: #7469B6;">Reviews</h2>
+        <div id="reviews-container">
+            <!-- Reviews will be dynamically populated here by JavaScript -->
+        </div>
+    </div>
+
+
+    <footer class="text-white py-4" style="background-color: #7469B6;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Chingu Vibes</h5>
+                    <p>Your ultimate platform for the latest Asian Dramas.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="home.html" class="text-white">Home</a></li>
+                        <li><a href="quiz.html" class="text-white">Quiz</a></li>
+                        <li><a href="kdrama.html" class="text-white">Kdramas</a></li>
+                        <li><a href="cdrama.html" class="text-white">Cdramas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>

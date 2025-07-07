@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chingu Vibes | login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Medula+One&family=Rancho&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #AD88C6, #FFE6E6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Form box */
+        .form-container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .form-container.hidden {
+            opacity: 0;
+            transform: translateX(-100%);
+            pointer-events: none;
+        }
+
+        /* wowowowowow */
+        .form-container.showing {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* whatever i enter */
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 1rem 0;
+            border: none;
+            border-radius: 6px;
+            background: #f0f0f0;
+            font-size: 1rem;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+
+        input:focus {
+            box-shadow: 0 0 10px #7469B6;
+            outline: none;
+        }
+
+        button {
+            background: linear-gradient(to right, #7469B6, #AD88C6);
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #AD88C6, #7469B6);
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #AD88C6;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #7469B6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1 style="color: #d07db6; font-family: 'Rancho', cursive;">Login</h1>
+        <form id="login-form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+    </div>
+
+    <div class="form-container hidden" id="signup-container">
+        <h1 style="color: #d07db6; font-family: 'Rancho', cursive;">Sign Up</h1>
+        <form id="signup-form">
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+    </div>
+    <script>
+        const loginFormContainer = document.getElementById('login-form').parentElement;
+        const signupFormContainer = document.getElementById('signup-container');
+        const signupLink = document.getElementById('signup-link');
+        const loginLink = document.getElementById('login-link');
+
+        signupLink.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            loginFormContainer.classList.add('hidden'); 
+            loginFormContainer.classList.remove('showing'); 
+            signupFormContainer.classList.remove('hidden');
+            signupFormContainer.classList.add('showing'); 
+        });
+
+        loginLink.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            signupFormContainer.classList.add('hidden'); 
+            signupFormContainer.classList.remove('showing'); 
+            loginFormContainer.classList.remove('hidden'); 
+            loginFormContainer.classList.add('showing'); 
+        });
+
+        document.getElementById('login-form').addEventListener('submit', (e) => {
+            e.preventDefault(); 
+            window.location.href = 'home.html'; 
+        });
+
+
+        document.getElementById('signup-form').addEventListener('submit', (e) => {
+            e.preventDefault(); 
+            window.location.href = 'home.html'; 
+        });
+
+    </script>
+</body>
+
+</html>
+
+
